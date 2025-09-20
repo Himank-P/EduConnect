@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/EduConnect/static/css/main.810e85d8.css",
+    "main.css": "/EduConnect/static/css/main.2a1fbf28.css",
     "main.js": "/EduConnect/static/js/main.9f31d422.js",
     "index.html": "/EduConnect/index.html",
-    "main.810e85d8.css.map": "/EduConnect/static/css/main.810e85d8.css.map",
+    "main.2a1fbf28.css.map": "/EduConnect/static/css/main.2a1fbf28.css.map",
     "main.9f31d422.js.map": "/EduConnect/static/js/main.9f31d422.js.map"
   },
   "entrypoints": [
-    "static/css/main.810e85d8.css",
+    "static/css/main.2a1fbf28.css",
     "static/js/main.9f31d422.js"
   ]
 }
