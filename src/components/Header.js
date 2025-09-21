@@ -46,7 +46,7 @@ function Header() {
               <li><NavLink to="/dashboard" onClick={handleLinkClick}>Dashboard</NavLink></li>
               <li><NavLink to="/fees" onClick={handleLinkClick}>Fees</NavLink></li>
               <li><NavLink to="/alumni" onClick={handleLinkClick}>Alumni</NavLink></li>
-              <li><NavLink to="/campus-tour" onClick={handleLinkClick}>Campus Tour</NavLink></li> {/* Updated Link */}
+              <li><NavLink to="/campus-tour" onClick={handleLinkClick}>Campus Tour</NavLink></li> {/* Corrected Link */}
               <li><NavLink to="/register" onClick={handleLinkClick} className="register-link">Register</NavLink></li>
             </ul>
           </nav>
@@ -57,4 +57,5 @@ function Header() {
 }
 
 export default Header;
+
 

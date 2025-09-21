@@ -2118,3 +2118,124 @@ main {
     color: var(--text-color);
     text-align: right;
 }
+
+/* --- NEW CAMPUS HUB CARD STYLES --- */
+
+/* This makes the card span two columns in the grid on larger screens */
+.campus-hub-card {
+    grid-column: span 2;
+    padding: 0;
+    /* Remove default padding to allow tabs to be full-width */
+}
+
+/* Container for the tab buttons */
+.hub-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Styling for the individual tab buttons */
+.hub-tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+    color: #888;
+}
+
+/* Style for the active tab button */
+.hub-tabs button.active {
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
+}
+
+/* Container for the content of the active tab */
+.hub-content {
+    padding: 25px;
+}
+
+/* Styling for each content pane */
+.tab-pane h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: var(--dark-blue);
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1.05em;
+}
+
+.info-meta {
+    font-weight: 600;
+    color: #555;
+}
+
+.info-meta.bold {
+    color: var(--dark-blue);
+}
+
+/* Link style for "Search Available Books" etc. */
+.hub-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.hub-link:hover {
+    text-decoration: underline;
+}
+
+/* List style for notices and events */
+.campus-life-list {
+    list-style: '›';
+    padding-left: 20px;
+    margin: 0;
+}
+
+.campus-life-list li {
+    margin-bottom: 10px;
+}
+
+.campus-life-list a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.campus-life-list a:hover {
+    color: var(--primary-blue);
+}
+
+/* Specific styles for the Academic Bank of Credits tab */
+.abc-pane {
+    text-align: center;
+}
+
+.abc-pane p {
+    margin: 10px 0 20px;
+}
+
+/* Responsive adjustments for the card */
+@media screen and (max-width: 992px) {
+    .campus-hub-card {
+        grid-column: span 1;
+        /* Revert to a single column on smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hub-tabs button {
+        font-size: 0.9em;
+        padding: 12px 5px;
+    }
+}
