@@ -1,16 +1,17 @@
 import React from 'react';
 
 function FeeCollection() {
-  // Sample data - in a real app, this would come from an API
+  // Sample data
   const feeDetails = {
     totalDue: '15,000',
     dueDate: '30 Sep 2025',
+    invoiceId: 'INV-2025-09-00123'
   };
 
   const paymentHistory = [
-    { id: 'TXN789123', date: '15 Jul 2025', amount: '25,000', status: 'Paid' },
-    { id: 'TXN456789', date: '15 Apr 2025', amount: '25,000', status: 'Paid' },
-    { id: 'TXN123456', date: '15 Jan 2025', amount: '25,000', status: 'Paid' },
+    { id: 'TXN789123', date: '15 Jul 2025', amount: '25,000', status: 'Paid', method: 'Online' },
+    { id: 'TXN456789', date: '15 Apr 2025', amount: '25,000', status: 'Paid', method: 'Online' },
+    { id: 'TXN123456', date: '15 Jan 2025', amount: '25,000', status: 'Paid', method: 'Bank Transfer' },
   ];
 
   return (
@@ -18,23 +19,29 @@ function FeeCollection() {
       <h1>💳 Fee Collection</h1>
       <p className="page-intro">Review your fee summary, payment history, and proceed with online payment.</p>
       
-      <div className="fee-grid">
+      <div className="fee-layout">
         
-        {/* Fee Summary Card */}
-        <div className="dashboard-card fee-summary-card">
-          <h3>Fee Summary</h3>
-          <div className="summary-item">
-            <span>Outstanding Amount:</span>
-            <span className="amount">₹{feeDetails.totalDue}</span>
+        {/* Fee Payment Card (Left Side) */}
+        <div className="fee-payment-card">
+          <h3>Current Invoice</h3>
+          <div className="invoice-details">
+            <div className="detail-item">
+              <span>Invoice ID</span>
+              <strong>{feeDetails.invoiceId}</strong>
+            </div>
+            <div className="detail-item">
+              <span>Due Date</span>
+              <strong>{feeDetails.dueDate}</strong>
+            </div>
           </div>
-          <div className="summary-item">
-            <span>Due Date:</span>
-            <span>{feeDetails.dueDate}</span>
+          <div className="amount-due">
+            <span>Amount Due</span>
+            <div className="amount">₹{feeDetails.totalDue}</div>
           </div>
-          <button className="form-button pay-now-btn">Pay Now</button>
+          <button className="form-button pay-now-btn">Proceed to Payment</button>
         </div>
 
-        {/* Payment History Card */}
+        {/* Payment History (Right Side) */}
         <div className="dashboard-card payment-history-card">
           <h3>Payment History</h3>
           <div className="table-container">
@@ -43,6 +50,7 @@ function FeeCollection() {
                 <tr>
                   <th>Transaction ID</th>
                   <th>Date</th>
+                  <th>Method</th>
                   <th>Amount</th>
                   <th>Status</th>
                 </tr>
@@ -52,6 +60,7 @@ function FeeCollection() {
                   <tr key={payment.id}>
                     <td>{payment.id}</td>
                     <td>{payment.date}</td>
+                    <td>{payment.method}</td>
                     <td>₹{payment.amount}</td>
                     <td><span className="status status-paid">{payment.status}</span></td>
                   </tr>

@@ -17,7 +17,8 @@ import OtpVerification from './components/OtpVerification';
 import Attendance from './components/Attendance';
 import Grades from './components/Grades';
 import Timetable from './components/Timetable';
-import CampusTour from './components/CampusTour'; // Import new Campus Tour
+import CampusTour from './components/CampusTour';
+import UserProfile from './components/UserProfile'; // 1. Import new page
 
 function App() {
   return (
@@ -38,9 +39,10 @@ function App() {
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/grades" element={<Grades />} />
           <Route path="/timetable" element={<Timetable />} />
-
-          {/* New Campus Tour Route */}
           <Route path="/campus-tour" element={<CampusTour />} />
+
+          {/* 2. Add new route for the profile page */}
+          <Route path="/profile" element={<UserProfile />} />
         </Routes>
       </main>
       <Footer />
