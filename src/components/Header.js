@@ -4,15 +4,12 @@ import { Link, NavLink } from 'react-router-dom';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // This effect adds/removes a class to the body to prevent scrolling
-  // when the mobile menu is open.
   useEffect(() => {
     if (menuOpen) {
       document.body.classList.add('no-scroll');
     } else {
       document.body.classList.remove('no-scroll');
     }
-    // Cleanup function to remove the class if the component unmounts
     return () => document.body.classList.remove('no-scroll');
   }, [menuOpen]);
 
@@ -22,7 +19,6 @@ function Header() {
 
   return (
     <>
-      {/* Overlay for darkening the background when menu is open */}
       <div 
         className={menuOpen ? "overlay show" : "overlay"} 
         onClick={() => setMenuOpen(false)}
@@ -34,7 +30,6 @@ function Header() {
             EduConnect
           </Link>
 
-          {/* Hamburger Menu Button - Animates to an "X" */}
           <button 
             className={menuOpen ? "hamburger-menu open" : "hamburger-menu"} 
             onClick={() => setMenuOpen(!menuOpen)}
@@ -45,16 +40,14 @@ function Header() {
             <span className="bar"></span>
           </button>
 
-          {/* Side Navigation Panel */}
           <nav className={menuOpen ? "main-nav open" : "main-nav"}>
             <ul>
               <li><NavLink to="/" onClick={handleLinkClick}>Home</NavLink></li>
               <li><NavLink to="/dashboard" onClick={handleLinkClick}>Dashboard</NavLink></li>
               <li><NavLink to="/fees" onClick={handleLinkClick}>Fees</NavLink></li>
               <li><NavLink to="/alumni" onClick={handleLinkClick}>Alumni</NavLink></li>
-              
-              {/* This is the new link we added */}
-              <li><NavLink to="/register" onClick={handleLinkClick} className="register-link">Register</NavLink></li> 
+              <li><NavLink to="/campus-tour" onClick={handleLinkClick}>Campus Tour</NavLink></li> {/* Updated Link */}
+              <li><NavLink to="/register" onClick={handleLinkClick} className="register-link">Register</NavLink></li>
             </ul>
           </nav>
         </div>

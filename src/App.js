@@ -14,9 +14,10 @@ import SchoolRegister from './components/SchoolRegister';
 import TeacherRegister from './components/TeacherRegister';
 import StudentRegister from './components/StudentRegister';
 import OtpVerification from './components/OtpVerification';
-import Attendance from './components/Attendance'; // Import new pages
+import Attendance from './components/Attendance';
 import Grades from './components/Grades';
 import Timetable from './components/Timetable';
+import CampusTour from './components/CampusTour'; // Import new Campus Tour
 
 function App() {
   return (
@@ -34,11 +35,12 @@ function App() {
           <Route path="/register/teacher" element={<TeacherRegister />} />
           <Route path="/register/student" element={<StudentRegister />} />
           <Route path="/verify/:userType" element={<OtpVerification />} />
-
-          {/* New Dashboard Routes */}
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/grades" element={<Grades />} />
           <Route path="/timetable" element={<Timetable />} />
+
+          {/* New Campus Tour Route */}
+          <Route path="/campus-tour" element={<CampusTour />} />
         </Routes>
       </main>
       <Footer />
