@@ -58,11 +58,11 @@ function FeeCollection() {
               <tbody>
                 {paymentHistory.map(payment => (
                   <tr key={payment.id}>
-                    <td>{payment.id}</td>
-                    <td>{payment.date}</td>
-                    <td>{payment.method}</td>
-                    <td>₹{payment.amount}</td>
-                    <td><span className="status status-paid">{payment.status}</span></td>
+                    <td data-label="Transaction ID">{payment.id}</td>
+                    <td data-label="Date">{payment.date}</td>
+                    <td data-label="Method">{payment.method}</td>
+                    <td data-label="Amount">₹{payment.amount}</td>
+                    <td data-label="Status"><span className="status status-paid">{payment.status}</span></td>
                   </tr>
                 ))}
               </tbody>

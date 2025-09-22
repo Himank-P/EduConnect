@@ -22,11 +22,6 @@
     box-sizing: border-box;
 }
 
-main {
-    position: relative;
-    overflow-x: hidden;
-}
-
 /* --- General Body Styling --- */
 body {
     font-family: 'Jost', 'Poppins', sans-serif;
@@ -660,7 +655,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
     margin-top: 40px;
-    justify-items: center;
+    justify-content: center; /* Changed from justify-items */
 }
 
 .alumni-card {
@@ -1445,44 +1440,225 @@ main {
 
 
 /* --- Individual Card Styles --- */
-.info-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; font-size: 1.05em; border-bottom: 1px solid var(--light-blue); }
-.info-item:last-of-type { border-bottom: none; }
-.info-meta { font-weight: 600; color: #555; }
-.info-meta.bold { color: var(--dark-blue); }
-.card-link-button { display: block; margin-top: auto; padding: 12px; background-color: var(--section-bg-light); border-radius: 8px; text-align: center; font-weight: 600; color: var(--primary-blue); text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease; border: 1px solid var(--border-color); }
-.card-link-button:hover { background-color: var(--primary-blue); color: var(--white-color); border-color: var(--primary-blue); }
-.library-card, .hostel-card, .abc-card, .campus-life-card, .fee-summary-card { padding: 25px; }
-.library-card>div, .hostel-card>div, .abc-card>p, .fee-summary-card>div, .fee-summary-card>p { flex-grow: 1; }
-.library-card { border-top: 4px solid #f57c00; }
-.hostel-card { border-top: 4px solid #e53935; }
-.campus-life-card { grid-column: span 2; border-top: 4px solid #5e35b1; }
-.campus-life-list { list-style: none; padding: 0; margin: 0; flex-grow: 1; }
-.campus-life-list li { display: flex; align-items: center; margin-bottom: 15px; padding: 10px 5px; border-radius: 8px; transition: background-color 0.3s ease; }
-.campus-life-list li:hover { background-color: var(--section-bg-light); }
-.item-tag { flex-shrink: 0; font-size: 0.8em; font-weight: 600; padding: 3px 10px; border-radius: 12px; color: var(--white-color); margin-right: 15px; width: 75px; text-align: center; }
-.item-tag.event { background-color: #d81b60; }
-.item-tag.notice { background-color: #fdd835; color: #444; }
-.item-tag.society { background-color: #5e35b1; }
-.campus-life-list a { text-decoration: none; color: var(--text-color); font-weight: 500; transition: color 0.3s ease; }
-.campus-life-list li:hover a { color: var(--primary-blue); }
-.card-link-button.view-all { text-align: right; background: none; padding-right: 0; border: none; }
-.card-link-button.view-all:hover { color: var(--dark-blue); background: none; text-decoration: underline; }
-.abc-card { text-align: center; background: linear-gradient(135deg, #4e54c8, #8f94fb); color: var(--white-color); border: none; }
-.abc-card h3 { color: var(--white-color); border-bottom-color: rgba(255, 255, 255, 0.2); }
-.abc-card p { color: rgba(255, 255, 255, 0.9); padding: 0; }
-.abc-card .form-button { background-color: rgba(255, 255, 255, 0.9); color: var(--dark-blue); margin-top: 10px; }
-.abc-card .form-button:hover { background-color: var(--white-color); }
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 1.05em;
+    border-bottom: 1px solid var(--light-blue);
+}
+
+.info-item:last-of-type {
+    border-bottom: none;
+}
+
+.info-meta {
+    font-weight: 600;
+    color: #555;
+}
+
+.info-meta.bold {
+    color: var(--dark-blue);
+}
+
+.card-link-button {
+    display: block;
+    margin-top: auto;
+    padding: 12px;
+    background-color: var(--section-bg-light);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.card-link-button:hover {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+    border-color: var(--primary-blue);
+}
+
+.library-card,
+.hostel-card,
+.abc-card,
+.campus-life-card,
+.fee-summary-card {
+    padding: 25px;
+}
+
+.library-card>div,
+.hostel-card>div,
+.abc-card>p,
+.fee-summary-card>div,
+.fee-summary-card>p {
+    flex-grow: 1;
+}
+
+.library-card {
+    border-top: 4px solid #f57c00;
+}
+
+.hostel-card {
+    border-top: 4px solid #e53935;
+}
+
+.campus-life-card {
+    grid-column: span 2;
+    border-top: 4px solid #5e35b1;
+}
+
+.campus-life-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.campus-life-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.campus-life-list li:hover {
+    background-color: var(--section-bg-light);
+}
+
+.item-tag {
+    flex-shrink: 0;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: var(--white-color);
+    margin-right: 15px;
+    width: 75px;
+    text-align: center;
+}
+
+.item-tag.event {
+    background-color: #d81b60;
+}
+
+.item-tag.notice {
+    background-color: #fdd835;
+    color: #444;
+}
+
+.item-tag.society {
+    background-color: #5e35b1;
+}
+
+.campus-life-list a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.campus-life-list li:hover a {
+    color: var(--primary-blue);
+}
+
+.card-link-button.view-all {
+    text-align: right;
+    background: none;
+    padding-right: 0;
+    border: none;
+}
+
+.card-link-button.view-all:hover {
+    color: var(--dark-blue);
+    background: none;
+    text-decoration: underline;
+}
+
+.abc-card {
+    text-align: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: var(--white-color);
+    border: none;
+}
+
+.abc-card h3 {
+    color: var(--white-color);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.abc-card p {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+}
+
+.abc-card .form-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--dark-blue);
+    margin-top: 10px;
+}
+
+.abc-card .form-button:hover {
+    background-color: var(--white-color);
+}
 
 /* --- Fee Summary Card Styles --- */
-.fee-summary-card { border-top: 4px solid #fbc02d; text-align: center; }
-.fee-amount { font-size: 3em; font-weight: 700; color: var(--dark-blue); margin: 10px 0; }
-.fee-amount .currency-symbol { font-size: 0.6em; vertical-align: super; margin-right: 5px; color: #888; }
-.fee-status { margin-bottom: 10px; }
-.status { padding: 5px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; text-transform: uppercase; }
-.status.status-pending { background-color: #fff8e1; color: #f57f17; }
-.due-date { color: #667; font-size: 0.9em; margin-bottom: 15px; }
-.fee-summary-card .form-button { width: 100%; margin-top: auto; text-decoration: none; }
-.fee-summary-card .form-button:hover { text-decoration: none; }
+.fee-summary-card {
+    border-top: 4px solid #fbc02d;
+    text-align: center;
+}
+
+.fee-amount {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin: 10px 0;
+}
+
+.fee-amount .currency-symbol {
+    font-size: 0.6em;
+    vertical-align: super;
+    margin-right: 5px;
+    color: #888;
+}
+
+.fee-status {
+    margin-bottom: 10px;
+}
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status.status-pending {
+    background-color: #fff8e1;
+    color: #f57f17;
+}
+
+.due-date {
+    color: #667;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.fee-summary-card .form-button {
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.fee-summary-card .form-button:hover {
+    text-decoration: none;
+}
 
 /* Responsive adjustments for the grid */
 @media screen and (max-width: 1200px) {
@@ -1522,12 +1698,12 @@ main {
     }
 }
 
-/* --- FEE COLLECTION PAGE STYLES --- */
+/* --- FEE COLLECTION PAGE STYLES (Corrected for Mobile Overflow) --- */
 
 /* The main two-column grid for the page */
 .fee-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Left column is smaller than the right */
+    grid-template-columns: 1fr 2fr; /* Left column is smaller */
     gap: 30px;
     align-items: flex-start;
 }
@@ -1545,6 +1721,7 @@ main {
 .fee-payment-card h3 {
     margin-top: 0;
     font-size: 1.4em;
+    color: var(--dark-blue);
 }
 
 /* Container for invoice ID and due date */
@@ -1556,7 +1733,15 @@ main {
 .detail-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--light-blue);
+}
+
+.detail-item:first-of-type {
+    padding-top: 0;
+}
+
+.detail-item span {
     color: #667;
 }
 
@@ -1576,6 +1761,7 @@ main {
 
 .amount-due span {
     font-size: 1em;
+    font-weight: 500;
     color: var(--dark-blue);
 }
 
@@ -1584,6 +1770,11 @@ main {
     font-size: 2.5em;
     font-weight: 700;
     color: var(--dark-blue);
+    line-height: 1.2;
+}
+
+.pay-now-btn {
+    margin-top: 20px;
 }
 
 /* The card on the right for payment history */
@@ -1596,28 +1787,11 @@ main {
     margin: 0;
 }
 
-.payment-history-card .table-container {
-    padding: 0; /* Remove padding for edge-to-edge table */
-}
-
-/* --- PAYMENT HISTORY TABLE STYLES --- */
-
-/* The card on the right for payment history */
-.payment-history-card {
-    padding: 0; /* Remove base padding to allow table to be full-width */
-}
-
-.payment-history-card h3 {
-    padding: 25px;
-    margin: 0;
-}
-
-/* A wrapper to allow the table to scroll horizontally on small screens */
 .table-container {
-    overflow-x: auto;
+    padding: 0 25px 10px 25px;
 }
 
-/* Main table styling */
+/* Styling for the payment history table */
 .history-table {
     width: 100%;
     border-collapse: collapse; /* Removes space between cells */
@@ -1626,7 +1800,7 @@ main {
 /* Styles for all header cells (th) and data cells (td) */
 .history-table th,
 .history-table td {
-    padding: 15px 25px;
+    padding: 15px 20px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
@@ -1646,12 +1820,7 @@ main {
     background-color: var(--section-bg-light);
 }
 
-/* Remove the bottom border from the last row in the table */
-.history-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* Base style for status tags */
+/* Styling for the "Paid" status tag */
 .status {
     padding: 5px 12px;
     border-radius: 20px;
@@ -1660,18 +1829,61 @@ main {
     text-transform: uppercase;
 }
 
-/* Specific style for the "Paid" status */
 .status-paid {
     background-color: #e8f5e9; /* Light green */
     color: #388e3c; /* Darker green */
 }
 
-
-
-/* Responsive adjustment for the fee page grid */
+/* --- RESPONSIVE STYLES FOR FEE PAGE --- */
 @media screen and (max-width: 992px) {
     .fee-layout {
         grid-template-columns: 1fr;
+    }
+
+    /* Hide the table header on mobile */
+    .history-table thead {
+        display: none;
+    }
+
+    /* Remove padding for the container on mobile to let cards be full-width */
+    .payment-history-card .table-container {
+        padding: 0 10px 10px 10px;
+    }
+    
+    .history-table, .history-table tbody, .history-table tr, .history-table td {
+        display: block;
+        width: 100%;
+    }
+
+    /* Make each table row a card */
+    .history-table tr {
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 15px;
+    }
+    
+    /* Stack cells vertically within each card */
+    .history-table td {
+        text-align: right; /* Align value to the right */
+        padding: 10px 0;
+        border-bottom: 1px dashed var(--light-blue);
+        position: relative;
+    }
+    
+    .history-table td:last-child {
+        border-bottom: none;
+    }
+
+    /* Add labels using the ::before pseudo-element */
+    .history-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        font-weight: 600;
+        color: var(--text-color);
+        text-align: left;
+        width: 50%;
     }
 }
 
