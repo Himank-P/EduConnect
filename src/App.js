@@ -18,7 +18,11 @@ import Attendance from './components/Attendance';
 import Grades from './components/Grades';
 import Timetable from './components/Timetable';
 import CampusTour from './components/CampusTour';
-import UserProfile from './components/UserProfile'; // 1. Import new page
+import UserProfile from './components/UserProfile';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import CookiePolicy from './components/CookiePolicy';
+import ContactPage from './components/ContactPage';
 
 function App() {
   return (
@@ -26,23 +30,31 @@ function App() {
       <Header />
       <main>
         <Routes>
-          {/* Existing Routes */}
+          {/* Main Pages */}
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/fees" element={<FeeCollection />} />
           <Route path="/alumni" element={<AlumniPortal />} />
+          <Route path="/campus-tour" element={<CampusTour />} />
+          <Route path="/contact" element={<ContactPage />} />
+
+          {/* Registration Flow */}
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/register/school" element={<SchoolRegister />} />
           <Route path="/register/teacher" element={<TeacherRegister />} />
           <Route path="/register/student" element={<StudentRegister />} />
           <Route path="/verify/:userType" element={<OtpVerification />} />
+
+          {/* Student-Specific Pages */}
+          <Route path="/profile" element={<UserProfile />} />
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/grades" element={<Grades />} />
           <Route path="/timetable" element={<Timetable />} />
-          <Route path="/campus-tour" element={<CampusTour />} />
 
-          {/* 2. Add new route for the profile page */}
-          <Route path="/profile" element={<UserProfile />} />
+          {/* Legal Pages */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
         </Routes>
       </main>
       <Footer />

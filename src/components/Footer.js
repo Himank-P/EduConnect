@@ -60,6 +60,8 @@ function Footer() {
             <Link to="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
             <Link to="/terms-of-service">Terms of Service</Link>
+            <span>|</span>
+            <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
       </div>

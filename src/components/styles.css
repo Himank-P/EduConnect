@@ -2239,3 +2239,128 @@ main {
         padding: 12px 5px;
     }
 }
+
+/* --- LEGAL PAGE STYLES --- */
+
+.legal-page-container {
+    max-width: 800px; /* Narrower for better readability */
+    background-color: var(--white-color);
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.legal-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.legal-content p {
+    line-height: 1.8;
+    color: #556;
+    margin-bottom: 20px;
+}
+
+.legal-content ul {
+    list-style-type: '✓';
+    padding-left: 25px;
+}
+
+.legal-content li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- CONTACT PAGE STYLES --- */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Form takes up more space */
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-form-container {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-info-container {
+    padding: 20px;
+}
+
+.contact-info-block {
+    margin-bottom: 30px;
+}
+
+.contact-info-block h3 {
+    font-size: 1.4em;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.contact-info-block p {
+    margin: 0;
+    line-height: 1.8;
+    color: #556;
+}
+
+.contact-info-block a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info-block a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
