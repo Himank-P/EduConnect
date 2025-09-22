@@ -22,6 +22,11 @@
     box-sizing: border-box;
 }
 
+main {
+    position: relative;
+    overflow-x: hidden;
+}
+
 /* --- General Body Styling --- */
 body {
     font-family: 'Jost', 'Poppins', sans-serif;
