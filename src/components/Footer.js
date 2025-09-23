@@ -19,7 +19,8 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/dashboard">Dashboard</Link></li>
               <li><Link to="/alumni">Alumni Portal</Link></li>
-              <li><Link to="/contact">Contact</Link></li> {/* Added Contact Link */}
+              <li><Link to="/campus-tour">Campus Tour</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/register">Register</Link></li>
             </ul>
           </div>

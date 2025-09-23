@@ -1229,9 +1229,9 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-        "profile quicklinks feesummary library"
-        "hostel campuslife campuslife contact"
-        "abccard campuslife campuslife contact";
+        "profile profile quicklinks feesummary"
+        "extracurriculars library hostel contact"
+        "campuslife campuslife abccard contact";
     gap: 30px;
 }
 
@@ -1244,6 +1244,7 @@ main {
 .campus-life-card { grid-area: campuslife; }
 .abc-card { grid-area: abccard; }
 .contact-school-card { grid-area: contact; }
+.extracurricular-card { grid-area: extracurriculars; } /* New grid area */
 
 
 .dashboard-card {
@@ -1670,14 +1671,14 @@ main {
     text-decoration: none;
 }
 
-/* Responsive adjustments for the grid */
 @media screen and (max-width: 1200px) {
     .dashboard-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "profile quicklinks feesummary"
-            "library hostel abccard"
-            "campuslife campuslife contact";
+            "library hostel extracurriculars"
+            "abccard campuslife campuslife"
+            "contact contact contact";
     }
 }
 
@@ -1687,7 +1688,8 @@ main {
         grid-template-areas:
             "profile quicklinks"
             "feesummary library"
-            "hostel abccard"
+            "hostel extracurriculars"
+            "abccard abccard"
             "campuslife campuslife"
             "contact contact";
     }
@@ -1702,13 +1704,131 @@ main {
             "feesummary"
             "library"
             "hostel"
+            "extracurriculars"
             "campuslife"
             "abccard"
             "contact";
     }
 }
 
-/* --- FEE COLLECTION PAGE STYLES (Corrected for Mobile Overflow) --- */
+/* --- Extracurriculars Card (Dashboard) --- */
+.extracurricular-card {
+    border-top: 4px solid #9b59b6; /* Purple Accent */
+}
+
+/* --- Extracurriculars Page --- */
+.activities-list {
+    display: grid;
+    gap: 20px;
+}
+.activity-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--section-bg-light);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+.activity-type {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--white-color);
+    width: 90px;
+    text-align: center;
+}
+.activity-type.club { background-color: #3498db; }
+.activity-type.event { background-color: #e67e22; }
+.activity-type.society { background-color: #9b59b6; }
+.activity-type.sport { background-color: #2ecc71; }
+
+.activity-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+.activity-details p {
+    margin: 0;
+    color: #667;
+    font-size: 0.9em;
+}
+
+/* --- Future Guidance Page --- */
+.guidance-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    background: var(--section-bg-light);
+    padding: 30px;
+    border-radius: 12px;
+}
+.guidance-input-section h3,
+.guidance-output-section h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--dark-blue);
+}
+.data-preview {
+    background: #2d3748;
+    color: #a0aec0;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 0.9em;
+}
+.guidance-input-section .form-button {
+    width: 100%;
+    margin-top: 20px;
+}
+.guidance-output-section {
+    background: var(--white-color);
+    padding: 25px;
+    border-radius: 8px;
+    min-height: 300px;
+}
+
+.loading-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--primary-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: #e53935;
+    font-weight: 600;
+}
+
+.analysis-result h3 {
+    font-size: 1.3em;
+    color: var(--dark-blue);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.analysis-result ul {
+    list-style: none;
+    padding-left: 0;
+}
+.analysis-result li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 992px) {
+    .guidance-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- FEE COLLECTION PAGE STYLES --- */
 
 /* The main two-column grid for the page */
 .fee-layout {

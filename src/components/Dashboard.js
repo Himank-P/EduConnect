@@ -5,6 +5,7 @@ import HostelCard from './HostelCard';
 import CampusLifeCard from './CampusLifeCard';
 import AbcCard from './AbcCard';
 import FeeSummaryCard from './FeeSummaryCard';
+import ExtracurricularsCard from './ExtracurricularsCard'; // 1. Import the card
 
 function Dashboard() {
   // Sample data
@@ -13,8 +14,6 @@ function Dashboard() {
     id: 'STU-12345',
     class: '12th Grade - Section A',
     attendance: '92%',
-    email: 'rohan.sharma@educonnect.app',
-    assignmentsDue: 3,
   };
 
   const schoolData = {
@@ -34,7 +33,6 @@ function Dashboard() {
       {/* Main Dashboard Grid */}
       <div className="dashboard-grid">
         
-        {/* Each card now has a unique class for grid placement */}
         <div className="dashboard-card profile-card">
            <div className="profile-header">
              <img src="https://placehold.co/100x100/ecf5ff/3498db?text=RS" alt="Profile" className="profile-avatar" />
@@ -46,11 +44,11 @@ function Dashboard() {
            <div className="profile-details">
                 <div className="detail-item">
                     <span>Email</span>
-                    <strong>{userData.email}</strong>
+                    <strong>rohan.sharma@educonnect.app</strong>
                 </div>
                 <div className="detail-item">
                     <span>Assignments Due</span>
-                    <strong>{userData.assignmentsDue}</strong>
+                    <strong>3</strong>
                 </div>
            </div>
            <div className="attendance-summary">
@@ -78,6 +76,7 @@ function Dashboard() {
         </div>
         
         <FeeSummaryCard />
+        <ExtracurricularsCard /> {/* 2. Add the card to the grid */}
         <LibraryCard />
         <HostelCard />
         <CampusLifeCard />

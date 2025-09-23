@@ -46,7 +46,8 @@ function Header() {
               <li><NavLink to="/dashboard" onClick={handleLinkClick}>Dashboard</NavLink></li>
               <li><NavLink to="/alumni" onClick={handleLinkClick}>Alumni</NavLink></li>
               <li><NavLink to="/campus-tour" onClick={handleLinkClick}>Campus Tour</NavLink></li>
-              <li><NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink></li> {/* Added Contact Link */}
+              <li><NavLink to="/guidance" onClick={handleLinkClick}>Guidance</NavLink></li>
+              <li><NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink></li>
               <li><NavLink to="/register" onClick={handleLinkClick} className="register-link">Register</NavLink></li>
             </ul>
           </nav>
