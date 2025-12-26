@@ -1,0 +1,15 @@
+[
+  {
+    "id": 101,
+    "email": "admin@gmail.com",
+    "schoolName": "Modern Delhi Public School",
+    "phone": "+91 11 2345 6789",
+    "address": "123 Education Lane, Knowledge Park, New Delhi",
+    "principalName": "Dr. Aruna Sharma",
+    "schoolBoard": "CBSE",
+    "website": "[https://moderndelhi.edu](https://moderndelhi.edu)",
+    "password": "password123",
+    "role": "school",
+    "registeredOn": "2025-10-21T09:23:41.987Z"
+  }
+]

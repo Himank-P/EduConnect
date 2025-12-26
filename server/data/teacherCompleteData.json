@@ -1,0 +1,120 @@
+{
+  "dashboard": {
+    "profile": {
+      "name": "Ms. Priya Singh",
+      "id": "TCH-045",
+      "department": "Science",
+      "attendance": "98%"
+    },
+    "salary": {
+      "status": "Paid",
+      "lastPaidDate": "30 Sep 2025",
+      "nextPayableDate": "31 Oct 2025"
+    },
+    "timetable": {
+      "Monday": [
+        { "subject": "10th Grade Physics", "teacher": "Ms. Priya Singh" },
+        { "subject": "Break", "teacher": "" },
+        { "subject": "9th Grade Chemistry", "teacher": "Ms. Priya Singh" },
+        { "subject": "Lab Duty", "teacher": "" }
+      ],
+      "Tuesday": [
+        { "subject": "9th Grade Chemistry", "teacher": "Ms. Priya Singh" },
+        { "subject": "10th Grade Physics", "teacher": "Ms. Priya Singh" },
+        { "subject": "Break", "teacher": "" },
+        { "subject": "Staff Meeting", "teacher": "" }
+      ],
+      "Wednesday": [
+        { "subject": "10th Grade Physics", "teacher": "Ms. Priya Singh" },
+        { "subject": "Lab Duty", "teacher": "" },
+        { "subject": "Break", "teacher": "" },
+        { "subject": "9th Grade Chemistry", "teacher": "Ms. Priya Singh" }
+      ],
+      "Thursday": [
+        { "subject": "9th Grade Chemistry", "teacher": "Ms. Priya Singh" },
+        { "subject": "10th Grade Physics", "teacher": "Ms. Priya Singh" },
+        { "subject": "Break", "teacher": "" },
+        { "subject": "-", "teacher": "" }
+      ],
+      "Friday": [
+        { "subject": "10th Grade Physics", "teacher": "Ms. Priya Singh" },
+        { "subject": "Lab Duty", "teacher": "" },
+        { "subject": "Break", "teacher": "" },
+        { "subject": "9th Grade Chemistry", "teacher": "Ms. Priya Singh" }
+      ]
+    },
+    "timeSlots": ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM"],
+    "homeClass": {
+      "className": "10th Grade - Section A",
+      "subject": "Physics",
+      "totalStudents": 35,
+      "classCaptain": "Diya Mehta",
+      "nextClass": "Tomorrow at 9:00 AM"
+    },
+    "busDuty": {
+      "busId": "BUS01",
+      "vehicleNumber": "DL 1P AB 1234",
+      "model": "Tata Marcopolo",
+      "color": "Yellow",
+      "routeName": "Route A - South City",
+      "driverName": "Ram Singh",
+      "driverPhone": "+91 98765 11111",
+      "conductorName": "Suresh Kumar",
+      "conductorPhone": "+91 98765 22222",
+      "students": ["Rohan Sharma (STU-12345)", "Kabir Gupta (STU-10A-03)"]
+    }
+  },
+  "homeroomTimetable": {
+      "schedule": {
+        "Monday": [{ "subject": "Physics", "teacher": "Ms. Priya Singh" }, { "subject": "Chemistry", "teacher": "Mr. Anand Kumar" }],
+        "Tuesday": [{ "subject": "Mathematics", "teacher": "Mr. Vikram Rathod" }, { "subject": "English", "teacher": "Mrs. Anjali Mehta" }]
+      },
+      "timeSlots": ["9:00 AM", "10:00 AM"]
+  },
+  "profileFull": {
+    "profile": {
+      "name": "Ms. Priya Singh",
+      "id": "TCH-045",
+      "department": "Science",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop"
+    },
+    "personalDetails": {
+      "Date of Joining": "12 Jun 2018",
+      "Qualification": "M.Sc. in Physics",
+      "Experience": "7 Years"
+    },
+    "contactDetails": {
+      "Email Address": "priya.singh@educonnect.app",
+      "Phone Number": "+91 98765 12345"
+    },
+    "subjectsTaught": [ "10th Grade Physics", "9th Grade Chemistry", "10th Grade Lab" ]
+  },
+  "classes": [
+    {
+      "classId": "10A",
+      "className": "10th Grade - Section A",
+      "subject": "Physics",
+      "students": [
+        { "id": "STU-10A-01", "name": "Aarav Sharma" },
+        { "id": "STU-10A-02", "name": "Diya Mehta" },
+        { "id": "STU-10A-03", "name": "Kabir Gupta" }
+      ]
+    },
+    {
+      "classId": "9B",
+      "className": "9th Grade - Section B",
+      "subject": "Chemistry",
+      "students": [
+        { "id": "STU-9B-01", "name": "Isha Reddy" },
+        { "id": "STU-9B-02", "name": "Vivaan Kumar" },
+        { "id": "STU-9B-03", "name": "Zara Ali" }
+      ]
+    }
+  ],
+  "detailedAttendance": [
+    { "id": "STU-10A-01", "name": "Aarav Sharma", "class": "10th A", "attended": 115, "total": 120, "percentage": "96%" },
+    { "id": "STU-10A-02", "name": "Diya Mehta", "class": "10th A", "attended": 118, "total": 120, "percentage": "98%" },
+    { "id": "STU-9B-01", "name": "Isha Reddy", "class": "9th B", "attended": 112, "total": 120, "percentage": "93%" }
+  ]
+}
+

@@ -1,0 +1,54 @@
+{
+  "homeroomSummary": {
+    "className": "10th Grade - Section A",
+    "totalStudents": 3,
+    "classCaptain": "Diya Mehta"
+  },
+  "students": {
+    "STU-10A-01": {
+      "summary": { "id": "STU-10A-01", "name": "Aarav Sharma", "class": "10th A", "attendance": "96%", "lastMark": "88/100 (Physics)" },
+      "details": {
+        "name": "Aarav Sharma",
+        "id": "STU-10A-01",
+        "class": "10th Grade - Section A",
+        "parentName": "Mr. Vikram Sharma",
+        "marks": [{ "subject": "Physics", "score": "88/100" }],
+        "recentAttendance": [{ "date": "Oct 03, 2025", "status": "Present" }],
+        "transport": {
+          "busId": "BUS01",
+          "routeName": "Route A - South City",
+          "femaleFaculty": "Mrs. Geeta Sharma"
+        }
+      }
+    },
+    "STU-10A-02": {
+      "summary": { "id": "STU-10A-02", "name": "Diya Mehta", "class": "10th A", "attendance": "98%", "lastMark": "92/100 (Physics)" },
+      "details": {
+        "name": "Diya Mehta",
+        "id": "STU-10A-02",
+        "class": "10th Grade - Section A",
+        "parentName": "Mrs. Priya Mehta",
+        "marks": [{ "subject": "Physics", "score": "92/100" }],
+        "recentAttendance": [{ "date": "Oct 03, 2025", "status": "Present" }],
+        "transport": {
+          "busId": "BUS01",
+          "routeName": "Route A - South City",
+          "femaleFaculty": "Mrs. Geeta Sharma"
+        }
+      }
+    },
+    "STU-9B-01": {
+      "summary": { "id": "STU-9B-01", "name": "Isha Reddy", "class": "9th B", "attendance": "93%", "lastMark": "85/100 (Chemistry)" },
+      "details": {
+        "name": "Isha Reddy",
+        "id": "STU-9B-01",
+        "class": "9th Grade - Section B",
+        "parentName": "Mr. Suresh Reddy",
+        "marks": [{ "subject": "Chemistry", "score": "85/100" }],
+        "recentAttendance": [{ "date": "Oct 03, 2025", "status": "Present" }],
+        "transport": null
+      }
+    }
+  }
+}
+

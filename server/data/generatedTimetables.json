@@ -1,0 +1,323 @@
+{
+  "10th A": {
+    "Monday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Chemistry",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "9:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Chemistry",
+        "teacher": "Ms. Priya Singh"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Chemistry",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      }
+    ]
+  },
+  "10th B": {
+    "Monday": [
+      {
+        "time": "9:00 AM",
+        "subject": "History",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "History",
+        "teacher": "Mrs. Anjali Mehta"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "History",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      }
+    ]
+  },
+  "10th C": {
+    "Monday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "9:00 AM",
+        "subject": "Physics",
+        "teacher": "Ms. Priya Singh"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "History",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "9:00 AM",
+        "subject": "History",
+        "teacher": "Mrs. Anjali Mehta"
+      },
+      {
+        "time": "10:00 AM",
+        "subject": "Mathematics",
+        "teacher": "Mr. Vikram Rathod"
+      },
+      {
+        "time": "11:00 AM",
+        "subject": "Break",
+        "teacher": ""
+      },
+      {
+        "time": "12:00 PM",
+        "subject": "English",
+        "teacher": "Mrs. Anjali Mehta"
+      }
+    ]
+  }
+}

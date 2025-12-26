@@ -1,0 +1,433 @@
+{
+  "dashboard": {
+    "totalStudents": 1250,
+    "totalStaff": 85,
+    "feeCollectionPercentage": 92,
+    "resourceConsumption": {
+      "electricity": "1500 kWh",
+      "water": "8000 L"
+    }
+  },
+  "transport": {
+    "vehicles": [
+      {
+        "id": "BUS01",
+        "vehicleNumber": "DL 1P AB 1234",
+        "model": "Tata Marcopolo",
+        "color": "Yellow",
+        "route": "Route A - South City",
+        "driver": "Ram Singh",
+        "driverPhone": "+91 98765 11111",
+        "conductor": "Suresh Kumar",
+        "conductorPhone": "+91 98765 22222",
+        "femaleFaculty": "Mrs. Geeta Sharma",
+        "facultyPhone": "+91 98765 33333",
+        "students": [
+          "Rohan Sharma (STU-12345)",
+          "Kabir Gupta (STU-10A-03)"
+        ]
+      },
+      {
+        "id": "BUS02",
+        "vehicleNumber": "HR 26 DA 5678",
+        "model": "Ashok Leyland",
+        "color": "Blue",
+        "route": "Route B - West End",
+        "driver": "Amit Patel",
+        "driverPhone": "+91 98765 44444",
+        "conductor": "Vikas Sharma",
+        "conductorPhone": "+91 98765 55555",
+        "femaleFaculty": "Ms. Rina D'Souza",
+        "facultyPhone": "+91 98765 66666",
+        "students": [
+          "Anjali Verma (STU-12346)"
+        ]
+      }
+    ],
+    "logs": [
+      {
+        "id": 1,
+        "busId": "BUS01",
+        "date": "Oct 06, 2025",
+        "departure": "7:00 AM",
+        "arrival": "4:30 PM",
+        "duration": "50 Mins (Avg)",
+        "fuelUsed": "15 L"
+      }
+    ],
+    "routes": {
+      "Route A - South City": {
+        "localities": [
+          "South Extension",
+          "Saket",
+          "Green Park"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d44869.82139828854!2d77.2089439294389!3d28.53956447953251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390ce2132a053531%3A0x35af5ba42372d82c!2sSouth%20Extension%20I%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5684!2d77.221!4m5!1s0x390ce18b2075799b%3A0x15242544152b1b31!2sSaket%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5106!2d77.2185!5e0!3m2!1sen!2sin!4v1663920942583"
+      },
+      "Route B - West End": {
+        "localities": [
+          "Rohini",
+          "Pitampura",
+          "Shalimar Bagh"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d44819.66484835611!2d77.07897042595603!3d28.69176043105361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390d03b6839215f5%3A0x4f20251145c15e86!2sRohini%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.7233!2d77.1075!4m5!1s0x390d047045b59683%3A0x2a27621ad7b8480!2sPitampura%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.6983!2d77.1438!5e0!3m2!1sen!2sin!4v1663921000000"
+      }
+    }
+  },
+  "hostelConfig": [
+    {
+      "buildingId": "BH1",
+      "name": "Boys Hostel 1",
+      "gender": "Boys",
+      "totalRooms": 50,
+      "capacityPerRoom": 2,
+      "totalCapacity": 100
+    },
+    {
+      "buildingId": "GH1",
+      "name": "Girls Hostel 1",
+      "gender": "Girls",
+      "totalRooms": 40,
+      "capacityPerRoom": 3,
+      "totalCapacity": 120
+    }
+  ],
+  "hostel": {
+    "staff": {
+      "warden": "Mrs. Sunita Sharma",
+      "guards": [
+        "Rajesh Kumar (Day)",
+        "Anil Verma (Night)"
+      ]
+    },
+    "consumption": {
+      "water": "7500 L/day",
+      "electricity": "120 kWh/day"
+    },
+    "rooms": [
+      {
+        "roomId": "BH1-1",
+        "buildingId": "BH1",
+        "occupants": [
+          "STU-12345"
+        ]
+      },
+      {
+        "roomId": "GH1-1",
+        "buildingId": "GH1",
+        "occupants": [
+          "STU-12346"
+        ]
+      }
+    ]
+  },
+  "library": {
+    "staff": {
+      "librarian": "Mr. Ashok Gupta",
+      "assistants": [
+        "Priya Chauhan",
+        "Mohit Verma"
+      ]
+    },
+    "consumption": {
+      "power": "45 kWh/day"
+    },
+    "books": {
+      "availableCount": 50210,
+      "rented": [
+        {
+          "id": 1,
+          "title": "The Principles of Physics",
+          "student": "Rohan Sharma",
+          "dueDate": "05 Oct 2025",
+          "status": "Overdue"
+        },
+        {
+          "id": 2,
+          "title": "Introduction to Algorithms",
+          "student": "Anjali Verma",
+          "dueDate": "12 Oct 2025",
+          "status": "Issued"
+        }
+      ],
+      "availableBooks": [
+        {
+          "id": "BK001",
+          "title": "A Brief History of Time",
+          "author": "Stephen Hawking",
+          "genre": "Science"
+        },
+        {
+          "id": "BK002",
+          "title": "Sapiens: A Brief History of Humankind",
+          "author": "Yuval Noah Harari",
+          "genre": "History"
+        }
+      ]
+    }
+  },
+  "students": {
+    "STU-12345": {
+      "id": "STU-12345",
+      "name": "Rohan Sharma",
+      "gender": "Male",
+      "class": "12th A",
+      "feeStatus": "Paid",
+      "busService": "Yes",
+      "hostelService": "Yes",
+      "allocatedRoom": "BH1-1",
+      "booksIssued": 1
+    },
+    "STU-12346": {
+      "id": "STU-12346",
+      "name": "Anjali Verma",
+      "gender": "Female",
+      "class": "12th A",
+      "feeStatus": "Pending",
+      "busService": "No",
+      "hostelService": "Yes",
+      "allocatedRoom": "GH1-1",
+      "booksIssued": 1
+    }
+  },
+  "teachers": {
+    "TCH-045": {
+      "id": "TCH-045",
+      "name": "Ms. Priya Singh",
+      "department": "Science",
+      "salaryStatus": "Paid",
+      "busService": "Yes",
+      "homeroom": "10th A"
+    },
+    "TCH-046": {
+      "id": "TCH-046",
+      "name": "Mr. Vikram Rathod",
+      "department": "Mathematics",
+      "salaryStatus": "Paid",
+      "busService": "No",
+      "homeroom": "N/A"
+    }
+  },
+  "staff": {
+    "STF-001": {
+      "id": "STF-001",
+      "name": "Suresh Yadav",
+      "role": "Cleaner",
+      "shift": "Morning",
+      "details": {
+        "assignedArea": "Block A, Floors 1-2"
+      }
+    },
+    "STF-002": {
+      "id": "STF-002",
+      "name": "Ram Kumar",
+      "role": "Peon",
+      "shift": "Day",
+      "details": {
+        "assignedDept": "Principal's Office"
+      }
+    },
+    "STF-003": {
+      "id": "STF-003",
+      "name": "Anil Verma",
+      "role": "Guard",
+      "shift": "Night",
+      "details": {
+        "postLocation": "Main Gate"
+      }
+    },
+    "STF-004": {
+      "id": "STF-004",
+      "name": "Sunil Mehta",
+      "role": "Guard",
+      "shift": "Day",
+      "details": {
+        "postLocation": "Hostel Block B"
+      }
+    },
+    "STF-005": {
+      "id": "STF-005",
+      "name": "Rina Devi",
+      "role": "Cleaner",
+      "shift": "Day",
+      "details": {
+        "assignedArea": "Library & Canteen"
+      }
+    },
+    "STF-006": {
+      "id": "STF-006",
+      "name": "Priya Kapoor",
+      "role": "Receptionist",
+      "shift": "Day",
+      "details": {
+        "contactExt": "101"
+      }
+    },
+    "STF-007": {
+      "id": "STF-007",
+      "name": "Sanjay Verma",
+      "role": "Driver",
+      "shift": "Day",
+      "details": {
+        "assignedBus": "BUS01"
+      }
+    },
+    "STF-008": {
+      "id": "STF-008",
+      "name": "Ravi Sharma",
+      "role": "Conductor",
+      "shift": "Day",
+      "details": {
+        "assignedBus": "BUS01"
+      }
+    },
+    "STF-009": {
+      "id": "STF-009",
+      "name": "Anita Desai",
+      "role": "Lab Assistant",
+      "shift": "Day",
+      "details": {
+        "assignedLab": "Physics Lab"
+      }
+    },
+    "STF-010": {
+      "id": "STF-010",
+      "name": "Vijay Kumar",
+      "role": "Admin Office",
+      "shift": "Day",
+      "details": {
+        "title": "Admissions Clerk"
+      }
+    }
+  },
+  "finances": {
+    "credit": [
+      {
+        "id": "FEE001",
+        "description": "Tuition Fee Batch 2025",
+        "amount": "2,50,000",
+        "date": "Oct 05, 2025"
+      },
+      {
+        "id": "FEE002",
+        "description": "Hostel Fee Batch 2025",
+        "amount": "80,000",
+        "date": "Oct 04, 2025"
+      }
+    ],
+    "debit": [
+      {
+        "id": "SAL001",
+        "description": "September Staff Salaries",
+        "amount": "5,40,000",
+        "date": "Oct 01, 2025"
+      },
+      {
+        "id": "SUP001",
+        "description": "Purchase of Lab Equipment",
+        "amount": "1,20,000",
+        "date": "Sep 28, 2025"
+      }
+    ]
+  },
+  "placements": {
+    "placements": [
+      {
+        "id": "PLC001",
+        "studentName": "Rohan Sharma",
+        "company": "Google",
+        "packageLPA": 25,
+        "status": "Placed"
+      },
+      {
+        "id": "PLC002",
+        "studentName": "Anjali Verma",
+        "company": "Microsoft",
+        "packageLPA": 22,
+        "status": "Placed"
+      }
+    ],
+    "hiringCompanies": [
+      {
+        "name": "Google",
+        "roles": [
+          "SDE 1",
+          "Data Analyst"
+        ],
+        "status": "Actively Hiring"
+      },
+      {
+        "name": "Microsoft",
+        "roles": [
+          "Software Engineer"
+        ],
+        "status": "Actively Hiring"
+      }
+    ]
+  },
+  "labs": {
+    "physics": {
+      "name": "Physics Lab",
+      "assistant": "Anita Desai",
+      "inventory": [
+        {
+          "id": "PHY-001",
+          "name": "Microscope",
+          "inStock": 15
+        },
+        {
+          "id": "PHY-002",
+          "name": "Vernier Caliper",
+          "inStock": 30
+        },
+        {
+          "id": "PHY-003",
+          "name": "Resistors (100 ohm)",
+          "inStock": 250
+        }
+      ]
+    },
+    "chemistry": {
+      "name": "Chemistry Lab",
+      "assistant": "Ravi Kumar",
+      "inventory": [
+        {
+          "id": "CHM-001",
+          "name": "Test Tubes",
+          "inStock": 500
+        },
+        {
+          "id": "CHM-002",
+          "name": "Bunsen Burner",
+          "inStock": 30
+        },
+        {
+          "id": "CHM-003",
+          "name": "Hydrochloric Acid (1L)",
+          "inStock": 12
+        }
+      ]
+    },
+    "biology": {
+      "name": "Biology Lab",
+      "assistant": "Sunita Rao",
+      "inventory": [
+        {
+          "id": "BIO-001",
+          "name": "Compound Microscope",
+          "inStock": 20
+        },
+        {
+          "id": "BIO-002",
+          "name": "Glass Slides (Box)",
+          "inStock": 50
+        },
+        {
+          "id": "BIO-003",
+          "name": "Dissection Kit",
+          "inStock": 25
+        }
+      ]
+    }
+  }
+}

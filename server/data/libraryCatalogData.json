@@ -1,0 +1,8 @@
+[
+  { "id": "BK001", "title": "A Brief History of Time", "author": "Stephen Hawking", "status": "Available" },
+  { "id": "BK002", "title": "Sapiens", "author": "Yuval Noah Harari", "status": "Available" },
+  { "id": "BK003", "title": "The Hobbit", "author": "J.R.R. Tolkien", "status": "Issued" },
+  { "id": "BK004", "title": "1984", "author": "George Orwell", "status": "Available" },
+  { "id": "BK007", "title": "Foundation", "author": "Isaac Asimov", "status": "Available" },
+  { "id": "BK008", "title": "Cosmos", "author": "Carl Sagan", "status": "Available" }
+]

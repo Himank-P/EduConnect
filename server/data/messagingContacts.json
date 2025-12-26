@@ -1,0 +1,15 @@
+{
+  "students": [
+    { "id": "rohan.sharma@educonnect.app", "name": "Rohan Sharma", "role": "Student - 12th A" },
+    { "id": "anjali.verma@educonnect.app", "name": "Anjali Verma", "role": "Student - 12th A" },
+    { "id": "kabir.gupta@educonnect.app", "name": "Kabir Gupta", "role": "Student - 12th B" }
+  ],
+  "teachers": [
+    { "id": "priya.singh@educonnect.app", "name": "Ms. Priya Singh", "role": "Science Teacher" },
+    { "id": "vikram.rathod@educonnect.app", "name": "Mr. Vikram Rathod", "role": "Maths Teacher" }
+  ],
+  "school": [
+    { "id": "admin@educonnect.app", "name": "Admin Support", "role": "Complaints & Suggestions" }
+  ]
+}
+

@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    { "name": "Ms. Priya Singh", "subjects": ["Physics", "Chemistry"] },
+    { "name": "Mr. Vikram Rathod", "subjects": ["Mathematics"] },
+    { "name": "Mrs. Anjali Mehta", "subjects": ["English", "History"] }
+  ],
+  "classes": [
+    { "name": "10th A", "subjects": ["Physics", "Chemistry", "Mathematics", "English"] },
+    { "name": "10th B", "subjects": ["Physics", "History", "Mathematics", "English"] },
+    { "name": "10th C", "subjects": ["Physics", "History", "Mathematics", "English"] }
+  ],
+  "timeSlots": ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM"],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+}

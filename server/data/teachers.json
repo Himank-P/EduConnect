@@ -1,0 +1,24 @@
+[
+  {
+    "id": 201,
+    "email": "teacher@gmail.com",
+    "fullName": "Ms. Priya Singh",
+    "schoolId": "DLI-001",
+    "department": "Science",
+    "phone": "+91 98765 12345",
+    "password": "password123",
+    "role": "teacher",
+    "registeredOn": "2025-10-21T09:23:14.162Z"
+  },
+  {
+    "id": 202,
+    "email": "vikram.rathod@educonnect.app",
+    "fullName": "Mr. Vikram Rathod",
+    "schoolId": "DLI-001",
+    "department": "Mathematics",
+    "phone": "+91 98765 54321",
+    "password": "password123",
+    "role": "teacher",
+    "registeredOn": "2025-10-21T09:25:00.000Z"
+  }
+]

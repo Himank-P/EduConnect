@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Anika Sharma",
+    "batch": "2016",
+    "degree": "B.Tech in Computer Science",
+    "currentRole": "Senior AI Engineer",
+    "company": "Innovate AI",
+    "location": "Bengaluru, India",
+    "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
+    "experience": [
+      { "role": "Senior AI Engineer", "company": "Innovate AI", "years": "2021-Present" },
+      { "role": "Machine Learning Engineer", "company": "DataCorp", "years": "2018-2021" },
+      { "role": "Software Developer", "company": "Tech Solutions", "years": "2016-2018" }
+    ],
+    "contact": {
+      "email": "anika.sharma@example.com",
+      "linkedin": "https://www.linkedin.com/in/anikasharma"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Vikram Singh",
+    "batch": "2014",
+    "degree": "MBA in Finance",
+    "currentRole": "Investment Banker",
+    "company": "Capital Investments",
+    "location": "Mumbai, India",
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
+    "experience": [
+        { "role": "Investment Banker", "company": "Capital Investments", "years": "2018-Present" },
+        { "role": "Financial Analyst", "company": "Global Finance", "years": "2014-2018" }
+    ],
+    "contact": {
+      "email": "vikram.singh@example.com",
+      "linkedin": "https://www.linkedin.com/in/vikramsingh"
+    }
+  },
+   {
+    "id": 3,
+    "name": "Sunita Patel",
+    "batch": "2018",
+    "degree": "B.A. in Graphic Design",
+    "currentRole": "Lead UX Designer",
+    "company": "Creative Minds",
+    "location": "Pune, India",
+    "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
+    "experience": [
+        { "role": "Lead UX Designer", "company": "Creative Minds", "years": "2022-Present" },
+        { "role": "UI/UX Designer", "company": "Design Hub", "years": "2018-2022" }
+    ],
+    "contact": {
+      "email": "sunita.patel@example.com",
+      "linkedin": "https://www.linkedin.com/in/sunitapatel"
+    }
+  }
+]
