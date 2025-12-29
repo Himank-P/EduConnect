@@ -11,7 +11,7 @@ router.get('/fee-summary', readData('studentProfileData.json', 'fees'));
 router.get('/student/library', readData('studentProfileData.json', 'library'));
 router.get('/student/hostel', readData('studentProfileData.json', 'hostel'));
 router.get('/attendance', readData('studentProfileData.json', 'attendance'));
-router.get('/student/grades', readData('studentProfileData.json', 'reportCard'));
+router.get('/student/grades', readData('studentProfileData.json', 'grades'));
 router.get('/timetable', readData('studentProfileData.json', 'timetable'));
 router.get('/student/transport', readData('studentProfileData.json', 'transport'));
 router.get('/school', readData('studentProfileData.json', 'school'));

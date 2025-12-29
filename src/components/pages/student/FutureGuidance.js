@@ -81,10 +81,7 @@ function FutureGuidance() {
             
             {studentData ? (
               <div className="data-preview-structured">
-                <div className="data-section">
-                  <strong>Top Grades:</strong>
-                  <p>{Object.entries(studentData.grades).map(([key, val]) => `${key}: ${val}`).join(', ')}</p>
-                </div>
+                
                 <div className="data-section">
                   <strong>Extracurriculars:</strong>
                   <p>{studentData.extracurriculars.join(', ')}</p>

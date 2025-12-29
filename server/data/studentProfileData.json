@@ -1,194 +1,150 @@
 {
-  "user": {
-    "name": "Rohan Sharma",
-    "id": "STU-12345",
-    "class": "12th Grade - Section A",
-    "attendance": "92%",
-    "email": "rohan.sharma@educonnect.app",
-    "assignmentsDue": 3,
-    "imageUrl": "https://placehold.co/150x150/ecf5ff/3498db?text=RS"
-  },
-  "transport": {
-    "busId": "BUS01",
-    "vehicleNumber": "DL 1P AB 1234",
-    "model": "Tata Marcopolo",
-    "color": "Yellow",
-    "routeName": "Route A - South City",
-    "driverName": "Ram Singh",
-    "driverPhone": "+91 98765 11111",
-    "conductorName": "Suresh Kumar",
-    "conductorPhone": "+91 98765 22222",
-    "femaleFaculty": "Mrs. Geeta Sharma",
-    "facultyPhone": "+91 98765 33333",
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d44869.82139828854!2d77.2089439294389!3d28.53956447953251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390ce2132a053531%3A0x35af5ba42372d82c!2sSouth%20Extension%20I%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5684!2d77.221!4m5!1s0x390ce18b2075799b%3A0x15242544152b1b31!2sSaket%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5106!2d77.2185!5e0!3m2!1sen!2sin!4v1663920942583"
-  },
-  "library": {
-    "issuedBooks": [
-      {
-        "id": 1,
-        "title": "The Principles of Physics",
-        "returnDate": "05 Oct 2025"
-      }
-    ]
-  },
-  "hostel": {
-    "allottedRoom": "BH1-1",
-    "status": "Confirmed"
-  },
-  "fees": {
-    "details": {
-      "totalDue": "15,000",
-      "dueDate": "30 Sep 2025"
-    }
-  },
-  "attendance": {
-    "summary": {
-      "percentage": "92%"
-    }
-  },
-  "grades": {
-    "midTerm": [
-      {
-        "subject": "Physics",
-        "marks": "88/100",
-        "grade": "A+"
-      }
-    ],
-    "finalTerm": [
-      {
-        "subject": "Physics",
-        "marks": "90/100",
-        "grade": "A+"
-      }
-    ]
-  },
-  "timetable": {
-    "schedule": {
-      "Monday": [
-        {
-          "subject": "Physics",
-          "teacher": "Ms. Priya Singh"
-        },
-        {
-          "subject": "Chemistry",
-          "teacher": "Mr. Anand Kumar"
-        },
-        {
-          "subject": "Break",
-          "teacher": ""
-        },
-        {
-          "subject": "Mathematics",
-          "teacher": "Mr. Vikram Rathod"
-        },
-        {
-          "subject": "English",
-          "teacher": "Mrs. Anjali Mehta"
-        }
-      ],
-      "Tuesday": [
-        {
-          "subject": "Chemistry",
-          "teacher": "Mr. Anand Kumar"
-        },
-        {
-          "subject": "Mathematics",
-          "teacher": "Mr. Vikram Rathod"
-        },
-        {
-          "subject": "Break",
-          "teacher": ""
-        },
-        {
-          "subject": "English",
-          "teacher": "Mrs. Anjali Mehta"
-        },
-        {
-          "subject": "Physics",
-          "teacher": "Ms. Priya Singh"
-        }
-      ]
-    },
-    "timeSlots": [
-      "9:00 AM",
-      "10:00 AM",
-      "11:00 AM",
-      "12:00 PM",
-      "1:00 PM"
-    ]
-  },
-  "extracurriculars": {
-    "summary": {
-      "clubs": 3,
-      "events": 5,
-      "latestAchievement": "1st Place, Inter-School Hackathon"
-    }
-  },
-  "school": {
-    "address": "123 Education Lane, Knowledge Park, New Delhi, Delhi 110001",
-    "phone": "+91 11 2345 6789",
-    "email": "contact@educonnectschool.edu.in"
-  },
-  "campusLife": [
-    {
-      "id": "1",
-      "type": "Event",
-      "title": "Innovate 2025: The Annual AI Hackathon",
-      "description": "Join the 24-hour coding challenge. Form teams and build a project focused on AI and machine learning. Great prizes and internship opportunities. Sponsored by the CS Department."
-    },
-    {
-      "id": "2",
-      "type": "Notice",
-      "title": "Guest Lecture: Quantum Mechanics & Its Future",
-      "description": "Dr. Aruna Singh from the National Physics Laboratory will be giving a guest lecture on the future of quantum computing. All science (Physics, Chemistry) students are encouraged to attend."
-    },
-    {
-      "id": "3",
-      "type": "Society",
-      "title": "Robotics Club: New Member Auditions",
-      "description": "The Robotics Club is looking for new engineers, programmers, and designers for the upcoming national competition. Sign up for an audition slot. This is perfect for problem-solving enthusiasts."
-    },
-    {
-      "id": "4",
-      "type": "Event",
-      "title": "Annual Cultural Fest 'Spectrum' - Volunteer Sign-ups",
-      "description": "Spectrum is back! We need volunteers for event management, stage design, and hospitality. A great way to get involved and meet new people."
-    },
-    {
-      "id": "5",
-      "type": "Notice",
-      "title": "Career Services Workshop: Building Your Resume",
-      "description": "The placement cell is hosting a workshop on how to build a professional resume and prepare for technical interviews. Mandatory for all final-year students."
-    },
-    {
-      "id": "6",
-      "type": "Society",
-      "title": "Basketball Team Tryouts",
-      "description": "The university basketball team is holding tryouts for all new and returning players. Show us what you've got! All students welcome."
-    },
-    {
-      "id": "7",
-      "type": "Event",
-      "title": "Workshop: Introduction to Python for Data Science",
-      "description": "A 3-day workshop on the fundamentals of Python, Pandas, and Matplotlib. No prior coding experience required. Perfect for students interested in data analysis or AI."
-    },
-    {
-      "id": "8",
-      "type": "Notice",
-      "title": "Library Closure for Maintenance",
-      "description": "The central library will be closed this weekend (Oct 25-26) for system upgrades. Please issue any required books beforehand."
-    }
-  ],
-  "fullProfile": {
-    "personalDetails": {
-      "Date of Birth": "15 Aug 2007",
-      "Gender": "Male"
-    },
-    "academicDetails": {
-      "Admission Date": "01 Apr 2022"
-    },
-    "contactDetails": {
-      "Phone Number": "+91 98765 43210"
-    }
-  }
+"user": {
+"name": "Rohan Sharma",
+"id": "STU-12345",
+"class": "12th Grade - Section A",
+"attendance": "92%",
+"email": "student@gmail.com",
+"assignmentsDue": 3,
+"imageUrl": "https://www.google.com/search?q=https://images.unsplash.com/photo-1539571696357-5a69c17a67c6%3Fq%3D80%26w%3D1887%26auto%3Dformat%26fit%3Dcrop"
+},
+"interests": [
+"Machine Learning",
+"Quantum Physics",
+"Astronomy",
+"Public Speaking",
+"UI/UX Design",
+"Competitive Programming"
+],
+"extracurriculars": [
+"Robotics Club - Lead Programmer",
+"School Basketball Team - Point Guard",
+"Debate Society - Member",
+"Volunteer at Local NGO",
+"Annual Science Fair - 1st Place Winner"
+],
+"extracurricularsSummary": {
+"clubs": 3,
+"events": 5,
+"latestAchievement": "1st Place, Inter-School Hackathon"
+},
+"transport": {
+"busId": "BUS01",
+"vehicleNumber": "DL 1P AB 1234",
+"model": "Tata Marcopolo",
+"color": "Yellow",
+"routeName": "Route A - South City",
+"driverName": "Ram Singh",
+"driverPhone": "+91 98765 11111",
+"conductorName": "Suresh Kumar",
+"conductorPhone": "+91 98765 22222",
+"femaleFaculty": "Mrs. Geeta Sharma",
+"facultyPhone": "+91 98765 33333",
+"googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d44869.82139828854!2d77.2089439294389!3d28.53956447953251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390ce2132a053531%3A0x35af5ba42372d82c!2sSouth%20Extension%20I%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5684!2d77.221!4m5!1s0x390ce18b2075799b%3A0x15242544152b1b31!2sSaket%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.5106!2d77.2185!5e0!3m2!1sen!2sin!4v1663920942583"
+},
+"library": {
+"issuedBooks": [
+{
+"id": 1,
+"title": "The Principles of Physics",
+"returnDate": "05 Oct 2025",
+"author": "P. Hewitt"
+},
+{
+"id": 4,
+"title": "Clean Code",
+"returnDate": "12 Oct 2025",
+"author": "Robert C. Martin"
+}
+]
+},
+"hostel": {
+"allottedRoom": "BH1-1",
+"building": "Boys Hostel Block A",
+"status": "Confirmed",
+"messPlan": "Standard Non-Veg"
+},
+"fees": {
+"details": {
+"totalDue": "15,000",
+"dueDate": "30 Sep 2025",
+"lastPayment": "12,000",
+"lastPaymentDate": "01 Aug 2025"
+}
+},
+"attendance": {
+"summary": {
+"percentage": "92%",
+"totalDays": 120,
+"presentDays": 110,
+"absentDays": 10
+}
+},
+"grades": {
+"midTerm": [
+{ "subject": "Physics", "marks": "88/100", "grade": "A+" },
+{ "subject": "Chemistry", "marks": "82/100", "grade": "A" },
+{ "subject": "Mathematics", "marks": "95/100", "grade": "O" },
+{ "subject": "English", "marks": "78/100", "grade": "B+" }
+],
+"finalTerm": [
+{ "subject": "Physics", "marks": "90/100", "grade": "A+" },
+{ "subject": "Chemistry", "marks": "85/100", "grade": "A+" },
+{ "subject": "Mathematics", "marks": "98/100", "grade": "O" },
+{ "subject": "English", "marks": "82/100", "grade": "A" }
+]
+},
+"timetable": {
+"schedule": {
+"Monday": [
+{ "subject": "Physics", "teacher": "Ms. Priya Singh", "time": "9:00 AM" },
+{ "subject": "Chemistry", "teacher": "Mr. Anand Kumar", "time": "10:00 AM" },
+{ "subject": "Break", "teacher": "", "time": "11:00 AM" },
+{ "subject": "Mathematics", "teacher": "Mr. Vikram Rathod", "time": "12:00 PM" }
+],
+"Tuesday": [
+{ "subject": "Chemistry", "teacher": "Mr. Anand Kumar", "time": "9:00 AM" },
+{ "subject": "Mathematics", "teacher": "Mr. Vikram Rathod", "time": "10:00 AM" },
+{ "subject": "Break", "teacher": "", "time": "11:00 AM" },
+{ "subject": "English", "teacher": "Mrs. Anjali Mehta", "time": "12:00 PM" }
+]
+},
+"timeSlots": ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM"]
+},
+"campusLife": [
+{
+"id": "1",
+"type": "Event",
+"title": "Innovate 2025: The Annual AI Hackathon",
+"description": "24-hour coding challenge. Form teams and build AI projects."
+},
+{
+"id": "2",
+"type": "Notice",
+"title": "Guest Lecture: Quantum Mechanics & Its Future",
+"description": "Dr. Aruna Singh will discuss the future of quantum computing."
+},
+{
+"id": "3",
+"type": "Society",
+"title": "Robotics Club: New Member Auditions",
+"description": "Looking for new engineers and programmers."
+}
+],
+"fullProfile": {
+"personalDetails": {
+"Date of Birth": "15 Aug 2007",
+"Gender": "Male",
+"Blood Group": "B+"
+},
+"academicDetails": {
+"Admission Date": "01 Apr 2022",
+"Roll Number": "12A05",
+"House": "Blue House"
+},
+"contactDetails": {
+"Phone Number": "+91 98765 43210",
+"Emergency Contact": "Mr. Vikram Sharma (+91 98765 00000)"
+}
+}
 }
